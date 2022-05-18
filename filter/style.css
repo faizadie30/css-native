@@ -1,0 +1,26 @@
+body {
+    text-align: center;
+}
+
+/* opacity */
+img {
+    filter: opacity(0.8);
+}
+
+/* blur */
+/* img{
+    filter:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur stdDeviation="2" /></filter></svg>#filter');
+    -webkit-filter:blur(2px);
+            filter:blur(2px);
+} */
+
+/* brightness */
+/* img{
+    filter:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.85" /><feFuncG type="linear" slope="0.85" /><feFuncB type="linear" slope="0.85" /></feComponentTransfer></filter></svg>#filter');
+    -webkit-filter:brightness(85%);
+            filter:brightness(85%);
+} */
+
+/* img {
+    filter: brightness(85%);
+} */

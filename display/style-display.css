@@ -1,0 +1,20 @@
+/* a{
+    /* display: inline; */
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background-color: aliceblue;
+} */
+
+/* h1,h2,p{
+    background-color: aqua;
+} */
+
+.main{
+    width: 600px;
+    background-color: beige;
+}
+
+.main h2{
+    background-color: aqua;
+}
