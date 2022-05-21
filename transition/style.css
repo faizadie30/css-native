@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.kotak {
+    margin: 100px;
+    width: 100px;
+    height: 100px;
+    background-color: salmon;
+    transition: 2s;
+    cursor: pointer;
+}
+
+.container {
+    width: 900px;
+    margin: 10px auto;
+    border: 5px solid blue;
+}
+
+.line {
+    width: 10px;
+    height: 250px;
+    background-color: aqua;
+    transform: rotate(-20deg);
+}
+
+.container:hover .kotak {
+    transform: rotate(180deg);
+    margin-left: 800px;
+    margin-top: 300px;
+    border-radius: 100%;
+
+}
