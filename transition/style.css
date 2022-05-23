@@ -3,14 +3,7 @@ body {
     padding: 0;
 }
 
-.kotak {
-    margin: 100px;
-    width: 100px;
-    height: 100px;
-    background-color: salmon;
-    transition: 2s;
-    cursor: pointer;
-}
+
 
 .container {
     width: 900px;
@@ -23,6 +16,15 @@ body {
     height: 250px;
     background-color: aqua;
     transform: rotate(-20deg);
+}
+
+.kotak {
+    margin: 100px;
+    width: 100px;
+    height: 100px;
+    background-color: salmon;
+    transition: all 2s cubic-bezier(0, 0, 0.34, 1.06) 2s;
+    cursor: pointer;
 }
 
 .container:hover .kotak {

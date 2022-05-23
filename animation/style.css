@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.container {
+    width: 900px;
+    margin: 10px auto;
+    border: 5px solid blue;
+}
+
+.kotak {
+    margin: 100px;
+    width: 100px;
+    height: 100px;
+    background-color: salmon;
+    cursor: pointer;
+    animation: loaderKotak 2s ease-out infinite alternate-reverse both;
+}
+
+@keyframes loaderKotak {
+    0% {
+        width: 200px;
+        height: 200px;
+    }
+
+    50% {
+        width: 500px;
+        height: 200px;
+    }
+
+    100% {
+        width: 500px;
+        height: 500px;
+    }
+}
