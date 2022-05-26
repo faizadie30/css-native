@@ -6,9 +6,9 @@
     --bg-color-secondary: #cecece;
 }
 
-body {
-    font: 18px/36px var(--font-family);
-    background-color: var(--bg-color-secondary);
+body:target {
+    background-color: rgba(0, 0, 0, 0);
+    transition: .8s;
 }
 
 h1 {
@@ -77,4 +77,77 @@ h1 {
 
 .clear {
     clear: both;
+}
+
+/* overlay */
+
+.overlay {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0);
+    transition: .5s;
+    text-align: center !important;
+    padding: 100px 0;
+}
+
+.overlay:target {
+    width: auto;
+    height: auto;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.overlay img {
+    border-radius: 0 !important;
+    height: auto !important;
+    width: auto !important;
+    max-height: 100% !important;
+    box-shadow: 2px 5px 8px rgba(0, 0, 0, .8);
+}
+
+.overlay:target img {
+    animation: zoomFadeIn 1s !important;
+}
+
+.overlay .close {
+    position: absolute;
+    top: 75px;
+    left: 65%;
+    right: 35%;
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+
+.overlay .close:target {
+    color: rgb(213, 212, 212);
+}
+
+.overlay:target .close {
+    animation: zoomFadeIn 1s forwards !important;
+}
+
+/* animation */
+@keyframes zoomFadeIn {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    /* 50% {
+        transform: scale(1) rotate(180deg);
+        opacity: 1;
+    } */
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
